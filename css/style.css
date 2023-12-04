@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,body {
+    height: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+header {
+    padding: 10px 2%;
+    padding-bottom: 30px;
+    background: linear-gradient(rgb(180,180,180), rgb(131, 131, 131));
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.logo1 {
+    width: 160px;
+    height: 60px;
+    background-image: url("../imagens/logo1.png");
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.logo2 {
+    width: 160px;
+    height: 60px;
+    background-image: url("../imagens/logo2.png");
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    float: right;
+}
+
+
+.bg {
+    height: 530px;
+    background-image: url("../imagens/bg-form.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.form-container {
+    width: 400px;
+    height: 105%;
+    background-color: white;
+    position: absolute;
+    top: -2.5%;
+    right: 30px;
+    box-shadow: 2px 2px 4px black;
+    z-index: 5;
+}
+
+.form-container form {
+    padding: 0 2%;
+    padding: 15px;
+}
+
+.form-container .form-wrapper:not(:first-child) {
+    margin-top: 40px;
+}
+
+.form-wrapper input[type="text"]{
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    line-height: 45px;
+}
+
+.form-wrapper p {
+    font-size: 14px;
+    color: #525252;
+}
+
+.form-wrapper input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: linear-gradient(#033C59,#022f46);
+    border: 0;
+    font-size: 20px;
+}
+
+.form-wrapper:last-child {
+    margin-top: 20px !important;
+}
+
+.form-container h2 {
+    font-size: 18px;
+    font-weight: normal;
+    padding: 20px 15px;
+    background: linear-gradient(rgb(219, 219, 219),rgb(166, 166, 166));
+}
+
+.arrow {
+    position: absolute;
+    left: 50%;
+    top: -32px;
+    transform:translateX(-50%);
+    -ms-transform:translateX(-50%);
+    width: 64px;
+    height: 64px;
+    background-size: 100% 100%;
+    background-image: url("../imagens/arrow.png");
+}
+
+.chamada {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+}
+
+.chamada h2 {
+    font-size: 23px;
+    width: 98%;
+    margin-top: 15px;
+}
+
+.chamada p {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 98%;
+}
+
+.chamada .h2-p {
+    background: linear-gradient(#2a3131,#161919);
+    padding: 50px 0px;
+    color: white;
+}
+
+footer {
+    text-align: center;
+}
+
+footer h2:first-child {
+    color: black;
+    padding-top: 20px;
+    font-size: 17px;
+}
+
+footer h2:not(:first-child){
+    margin-top: 15px;
+    font-size: 17px;
+
+}
+
+footer img {
+    margin-top: 15px;
+    width: 150px;
+    padding-bottom: 10px;
+}
+
+footer .container {
+    background: linear-gradient(rgb(180,180,180), rgb(131, 131, 131));
+}
+
+@media screen and (max-width: 960px){
+    .bg {
+        height: auto;
+        text-align: center;
+        padding: 70px 0;
+    }
+
+    .form-container {
+        width: 96%;
+        max-width: 400px;
+        height: auto;
+        position: static;
+        display: inline-block;
+    }
+}
+
+.flex-mosaico {
+    display: flex;
+}
+
+.item1 {
+    width: 60%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item2 {
+    width: 40%;
+}
+
+.item2 p {
+    padding: 60px;
+    color: white;
+    background: linear-gradient(#3f4949,#252a2a);
+    line-height: 25px;
+}
+
+
+@media screen and (max-width: 510px){
+    header {
+        text-align: center;
+    }
+
+    .logo1,.logo2 {
+        float: none;
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .flex-mosaico {
+        display: block;
+    }
+
+    .item1 {
+        width: 100%;
+        padding-top: 80%;
+    }
+
+    .item2 {
+        width: 100%;
+    }
+
+}
